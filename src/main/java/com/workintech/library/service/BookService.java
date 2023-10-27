@@ -8,7 +8,5 @@ public interface BookService {
     List<Book> findAll();
     Book findByBookId(long id);
     Book save(Book book);
-    Book saveByCategoryId(long categoryId);
-    Book saveByCategoryAndAuthorId(long categoryId, long authorId);
     Book deleteBook(long id);
 }

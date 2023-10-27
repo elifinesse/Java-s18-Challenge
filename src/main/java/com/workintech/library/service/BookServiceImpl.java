@@ -35,18 +35,6 @@ public class BookServiceImpl implements BookService{
     }
 
     @Override
-    public Book saveByCategoryId(long categoryId) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'saveByCategoryId'");
-    }
-
-    @Override
-    public Book saveByCategoryAndAuthorId(long categoryId, long authorId) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'saveByCategoryAndAuthorId'");
-    }
-
-    @Override
     public Book deleteBook(long id) {
         Book found = findByBookId(id);
         bookRepository.deleteById(id);

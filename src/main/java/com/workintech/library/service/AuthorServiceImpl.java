@@ -37,12 +37,6 @@ public class AuthorServiceImpl implements AuthorService{
     }
 
     @Override
-    public Author saveBook(long bookId) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'saveBook'");
-    }
-
-    @Override
     public Author deleteAuthor(long id) {
         Author found = findByAuthorId(id);
         authorRepository.deleteById(id);
